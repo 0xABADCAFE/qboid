@@ -201,7 +201,7 @@ for ($i = 0; $i<8; $i++) {
     $containers[] = new Cuboid(mt_rand(40, 80), mt_rand(50, 100), mt_rand(60, 120));
 }
 $containers[] = new Cuboid(7*17, 5*13, 3*11); // Products of Primes
-$containers[] = new Cuboid(30, 40, 50);
+$containers[] = new Cuboid(30, 40, 50);       // Multiples of 5
 
 /**
  * @var RegularisedCuboid[] $boxes
@@ -210,8 +210,8 @@ $boxes = [];
 for ($i = 0; $i<8; $i++) {
     $boxes[] = new RegularisedCuboid(mt_rand(1, 30), mt_rand(1, 30), mt_rand(1, 30));
 }
-$boxes[] = new RegularisedCuboid(7, 5, 3); // Primes
-$boxes[] = new RegularisedCuboid(5, 5, 5); // Cube
+$boxes[] = new RegularisedCuboid(7, 5, 3); // Primes - expect exactly 2431 in the Products of Primes Container @ 100%
+$boxes[] = new RegularisedCuboid(5, 5, 5); // Cube   - expect exactly 480 in the Multiples of 5 Container @ 100%
 
 
 /**
@@ -219,10 +219,11 @@ $boxes[] = new RegularisedCuboid(5, 5, 5); // Cube
  */
 $packer = new CuboidPacker();
 
-foreach ($containers as $container) {
+foreach ($containers as $c => $container) {
 
     echo
-        "Testing Container: ", $container,
+        $c,
+        " Testing Container: ", $container,
         " [Volume: ",          $container->volume,
         ", Irregularity: ",    $container->irregularity,
         "]\n";
@@ -239,7 +240,7 @@ foreach ($containers as $container) {
             "\n\t\tEfficiency: ",   $best->efficiency,
             "%\n\t\tRotation: ",    $best->rotation,
             "\n\t\tPacked Block: ", $best->block,
-            "\n";
+            "\n\n";
     }
 
 }

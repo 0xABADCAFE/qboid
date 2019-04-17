@@ -1,0 +1,710 @@
+0 Testing Container: 41x85x71 [Volume: 247435, Irregularity: 1035.6675393056]
+	0 Testing Box: 20x13x3 into Container: 41x85x71
+		[Volume: 780, Irregularity: 169.43332341698]
+		Count: 280
+		Efficiency: 88.265605108412%
+		Rotation: 3x20x13
+		Packed Block: 40x84x65
+
+	1 Testing Box: 30x20x2 into Container: 41x85x71
+		[Volume: 1200, Irregularity: 537.60805844725]
+		Count: 168
+		Efficiency: 81.475943176996%
+		Rotation: 2x30x20
+		Packed Block: 40x84x60
+
+	2 Testing Box: 30x24x19 into Container: 41x85x71
+		[Volume: 13680, Irregularity: 61.188227849259]
+		Count: 12
+		Efficiency: 66.344696586982%
+		Rotation: 19x30x24
+		Packed Block: 38x72x60
+
+	3 Testing Box: 30x28x13 into Container: 41x85x71
+		[Volume: 10920, Irregularity: 179.24596472507]
+		Count: 18
+		Efficiency: 79.439044597571%
+		Rotation: 13x30x28
+		Packed Block: 39x84x60
+
+	4 Testing Box: 20x19x3 into Container: 41x85x71
+		[Volume: 1140, Irregularity: 219.88338162328]
+		Count: 184
+		Efficiency: 84.773778972255%
+		Rotation: 3x20x19
+		Packed Block: 40x76x69
+
+	5 Testing Box: 17x10x9 into Container: 41x85x71
+		[Volume: 1530, Irregularity: 38.682720017612]
+		Count: 144
+		Efficiency: 89.041566472003%
+		Rotation: 9x17x10
+		Packed Block: 40x81x68
+
+	6 Testing Box: 25x11x9 into Container: 41x85x71
+		[Volume: 2475, Irregularity: 158.51187274768]
+		Count: 72
+		Efficiency: 72.018914058238%
+		Rotation: 9x25x11
+		Packed Block: 36x75x66
+
+	7 Testing Box: 20x16x9 into Container: 41x85x71
+		[Volume: 2880, Irregularity: 63.789929400837]
+		Count: 72
+		Efficiency: 83.803827267767%
+		Rotation: 9x20x16
+		Packed Block: 40x81x64
+
+	8 Testing Box: 7x5x3 into Container: 41x85x71
+		[Volume: 105, Irregularity: 8.2390900662486]
+		Count: 2240
+		Efficiency: 95.055267039829%
+		Rotation: 3x7x5
+		Packed Block: 40x84x70
+
+	9 Testing Box: 5x5x5 into Container: 41x85x71
+		[Volume: 125, Irregularity: 2.366582715663E-30]
+		Count: 1904
+		Efficiency: 96.186877361731%
+		Rotation: 5x5x5
+		Packed Block: 40x85x70
+
+1 Testing Container: 61x71x93 [Volume: 402783, Irregularity: 539.95982494855]
+	0 Testing Box: 20x13x3 into Container: 61x71x93
+		[Volume: 780, Irregularity: 169.43332341698]
+		Count: 483
+		Efficiency: 93.534235556118%
+		Rotation: 3x20x13
+		Packed Block: 60x69x91
+
+	1 Testing Box: 30x20x2 into Container: 61x71x93
+		[Volume: 1200, Irregularity: 537.60805844725]
+		Count: 315
+		Efficiency: 93.847059086406%
+		Rotation: 2x30x20
+		Packed Block: 60x70x90
+
+	2 Testing Box: 30x24x19 into Container: 61x71x93
+		[Volume: 13680, Irregularity: 61.188227849259]
+		Count: 18
+		Efficiency: 61.13465563343%
+		Rotation: 19x30x24
+		Packed Block: 48x57x90
+
+	3 Testing Box: 30x28x13 into Container: 61x71x93
+		[Volume: 10920, Irregularity: 179.24596472507]
+		Count: 30
+		Efficiency: 81.334117874885%
+		Rotation: 13x30x28
+		Packed Block: 56x65x90
+
+	4 Testing Box: 20x19x3 into Container: 61x71x93
+		[Volume: 1140, Irregularity: 219.88338162328]
+		Count: 279
+		Efficiency: 78.965596859848%
+		Rotation: 3x20x19
+		Packed Block: 60x57x93
+
+	5 Testing Box: 17x10x9 into Container: 61x71x93
+		[Volume: 1530, Irregularity: 38.682720017612]
+		Count: 240
+		Efficiency: 91.16571454108%
+		Rotation: 9x17x10
+		Packed Block: 60x68x90
+
+	6 Testing Box: 25x11x9 into Container: 61x71x93
+		[Volume: 2475, Irregularity: 158.51187274768]
+		Count: 120
+		Efficiency: 73.736974996462%
+		Rotation: 9x25x11
+		Packed Block: 50x66x90
+
+	7 Testing Box: 20x16x9 into Container: 61x71x93
+		[Volume: 2880, Irregularity: 63.789929400837]
+		Count: 120
+		Efficiency: 85.803025450429%
+		Rotation: 9x20x16
+		Packed Block: 60x64x90
+
+	8 Testing Box: 7x5x3 into Container: 61x71x93
+		[Volume: 105, Irregularity: 8.2390900662486]
+		Count: 3720
+		Efficiency: 96.975294389287%
+		Rotation: 3x7x5
+		Packed Block: 60x70x93
+
+	9 Testing Box: 5x5x5 into Container: 61x71x93
+		[Volume: 125, Irregularity: 2.366582715663E-30]
+		Count: 3024
+		Efficiency: 93.847059086406%
+		Rotation: 5x5x5
+		Packed Block: 60x70x90
+
+2 Testing Container: 55x97x67 [Volume: 357445, Irregularity: 948.37277947973]
+	0 Testing Box: 20x13x3 into Container: 55x97x67
+		[Volume: 780, Irregularity: 169.43332341698]
+		Count: 384
+		Efficiency: 83.794709675614%
+		Rotation: 3x20x13
+		Packed Block: 52x96x60
+
+	1 Testing Box: 30x20x2 into Container: 55x97x67
+		[Volume: 1200, Irregularity: 537.60805844725]
+		Count: 243
+		Efficiency: 81.578984179384%
+		Rotation: 2x30x20
+		Packed Block: 54x90x60
+
+	2 Testing Box: 30x24x19 into Container: 55x97x67
+		[Volume: 13680, Irregularity: 61.188227849259]
+		Count: 20
+		Efficiency: 76.543244415225%
+		Rotation: 19x30x24
+		Packed Block: 48x95x60
+
+	3 Testing Box: 30x28x13 into Container: 55x97x67
+		[Volume: 10920, Irregularity: 179.24596472507]
+		Count: 24
+		Efficiency: 73.320370966163%
+		Rotation: 13x30x28
+		Packed Block: 52x84x60
+
+	4 Testing Box: 20x19x3 into Container: 55x97x67
+		[Volume: 1140, Irregularity: 219.88338162328]
+		Count: 270
+		Efficiency: 86.111149967128%
+		Rotation: 3x20x19
+		Packed Block: 54x95x60
+
+	5 Testing Box: 17x10x9 into Container: 55x97x67
+		[Volume: 1530, Irregularity: 38.682720017612]
+		Count: 189
+		Efficiency: 80.899159311223%
+		Rotation: 9x17x10
+		Packed Block: 51x90x63
+
+	6 Testing Box: 25x11x9 into Container: 55x97x67
+		[Volume: 2475, Irregularity: 158.51187274768]
+		Count: 120
+		Efficiency: 83.089706108632%
+		Rotation: 9x25x11
+		Packed Block: 50x90x66
+
+	7 Testing Box: 20x16x9 into Container: 55x97x67
+		[Volume: 2880, Irregularity: 63.789929400837]
+		Count: 108
+		Efficiency: 87.017583124677%
+		Rotation: 9x20x16
+		Packed Block: 54x96x60
+
+	8 Testing Box: 7x5x3 into Container: 55x97x67
+		[Volume: 105, Irregularity: 8.2390900662486]
+		Count: 3168
+		Efficiency: 93.060470841668%
+		Rotation: 3x7x5
+		Packed Block: 55x96x63
+
+	9 Testing Box: 5x5x5 into Container: 55x97x67
+		[Volume: 125, Irregularity: 2.366582715663E-30]
+		Count: 2717
+		Efficiency: 95.014617633482%
+		Rotation: 5x5x5
+		Packed Block: 55x95x65
+
+3 Testing Container: 53x79x109 [Volume: 456383, Irregularity: 1604.1688943814]
+	0 Testing Box: 20x13x3 into Container: 53x79x109
+		[Volume: 780, Irregularity: 169.43332341698]
+		Count: 520
+		Efficiency: 88.872723129477%
+		Rotation: 3x20x13
+		Packed Block: 52x78x100
+
+	1 Testing Box: 30x20x2 into Container: 53x79x109
+		[Volume: 1200, Irregularity: 537.60805844725]
+		Count: 260
+		Efficiency: 68.363633176521%
+		Rotation: 2x30x20
+		Packed Block: 52x60x100
+
+	2 Testing Box: 30x24x19 into Container: 53x79x109
+		[Volume: 13680, Irregularity: 61.188227849259]
+		Count: 24
+		Efficiency: 71.939577065754%
+		Rotation: 19x30x24
+		Packed Block: 48x76x90
+
+	3 Testing Box: 30x28x13 into Container: 53x79x109
+		[Volume: 10920, Irregularity: 179.24596472507]
+		Count: 24
+		Efficiency: 57.425451868277%
+		Rotation: 13x30x28
+		Packed Block: 52x56x90
+
+	4 Testing Box: 20x19x3 into Container: 53x79x109
+		[Volume: 1140, Irregularity: 219.88338162328]
+		Count: 340
+		Efficiency: 84.928667369293%
+		Rotation: 3x20x19
+		Packed Block: 51x76x100
+
+	5 Testing Box: 17x10x9 into Container: 53x79x109
+		[Volume: 1530, Irregularity: 38.682720017612]
+		Count: 252
+		Efficiency: 84.481674383139%
+		Rotation: 9x17x10
+		Packed Block: 51x70x108
+
+	6 Testing Box: 25x11x9 into Container: 53x79x109
+		[Volume: 2475, Irregularity: 158.51187274768]
+		Count: 168
+		Efficiency: 91.107688060248%
+		Rotation: 9x25x11
+		Packed Block: 50x77x108
+
+	7 Testing Box: 20x16x9 into Container: 53x79x109
+		[Volume: 2880, Irregularity: 63.789929400837]
+		Count: 120
+		Efficiency: 75.725870595531%
+		Rotation: 9x20x16
+		Packed Block: 48x72x100
+
+	8 Testing Box: 7x5x3 into Container: 53x79x109
+		[Volume: 105, Irregularity: 8.2390900662486]
+		Count: 3960
+		Efficiency: 91.107688060248%
+		Rotation: 3x7x5
+		Packed Block: 50x77x108
+
+	9 Testing Box: 5x5x5 into Container: 53x79x109
+		[Volume: 125, Irregularity: 2.366582715663E-30]
+		Count: 3150
+		Efficiency: 86.276219754022%
+		Rotation: 5x5x5
+		Packed Block: 50x75x105
+
+4 Testing Container: 51x94x77 [Volume: 369138, Irregularity: 953.3940819945]
+	0 Testing Box: 20x13x3 into Container: 51x94x77
+		[Volume: 780, Irregularity: 169.43332341698]
+		Count: 357
+		Efficiency: 75.435203094778%
+		Rotation: 3x20x13
+		Packed Block: 51x91x60
+
+	1 Testing Box: 30x20x2 into Container: 51x94x77
+		[Volume: 1200, Irregularity: 537.60805844725]
+		Count: 228
+		Efficiency: 74.118622303854%
+		Rotation: 2x30x20
+		Packed Block: 40x90x76
+
+	2 Testing Box: 30x24x19 into Container: 51x94x77
+		[Volume: 13680, Irregularity: 61.188227849259]
+		Count: 24
+		Efficiency: 88.942346764625%
+		Rotation: 19x30x24
+		Packed Block: 48x90x76
+
+	3 Testing Box: 30x28x13 into Container: 51x94x77
+		[Volume: 10920, Irregularity: 179.24596472507]
+		Count: 18
+		Efficiency: 53.248378655137%
+		Rotation: 13x30x28
+		Packed Block: 39x84x60
+
+	4 Testing Box: 20x19x3 into Container: 51x94x77
+		[Volume: 1140, Irregularity: 219.88338162328]
+		Count: 272
+		Efficiency: 84.001105277701%
+		Rotation: 3x20x19
+		Packed Block: 51x80x76
+
+	5 Testing Box: 17x10x9 into Container: 51x94x77
+		[Volume: 1530, Irregularity: 38.682720017612]
+		Count: 216
+		Efficiency: 89.527493782813%
+		Rotation: 9x17x10
+		Packed Block: 51x90x72
+
+	6 Testing Box: 25x11x9 into Container: 51x94x77
+		[Volume: 2475, Irregularity: 158.51187274768]
+		Count: 140
+		Efficiency: 93.86733416771%
+		Rotation: 9x25x11
+		Packed Block: 50x90x77
+
+	7 Testing Box: 20x16x9 into Container: 51x94x77
+		[Volume: 2880, Irregularity: 63.789929400837]
+		Count: 96
+		Efficiency: 74.898818328105%
+		Rotation: 9x20x16
+		Packed Block: 48x80x72
+
+	8 Testing Box: 7x5x3 into Container: 51x94x77
+		[Volume: 105, Irregularity: 8.2390900662486]
+		Count: 3410
+		Efficiency: 96.996245306633%
+		Rotation: 3x7x5
+		Packed Block: 50x93x77
+
+	9 Testing Box: 5x5x5 into Container: 51x94x77
+		[Volume: 125, Irregularity: 2.366582715663E-30]
+		Count: 2700
+		Efficiency: 91.429221591925%
+		Rotation: 5x5x5
+		Packed Block: 50x90x75
+
+5 Testing Container: 44x64x113 [Volume: 318208, Irregularity: 2608.0024191878]
+	0 Testing Box: 20x13x3 into Container: 44x64x113
+		[Volume: 780, Irregularity: 169.43332341698]
+		Count: 336
+		Efficiency: 82.361222847949%
+		Rotation: 3x20x13
+		Packed Block: 40x63x104
+
+	1 Testing Box: 30x20x2 into Container: 44x64x113
+		[Volume: 1200, Irregularity: 537.60805844725]
+		Count: 224
+		Efficiency: 84.473049074819%
+		Rotation: 2x30x20
+		Packed Block: 40x60x112
+
+	2 Testing Box: 30x24x19 into Container: 44x64x113
+		[Volume: 13680, Irregularity: 61.188227849259]
+		Count: 16
+		Efficiency: 68.785197103781%
+		Rotation: 19x30x24
+		Packed Block: 38x60x96
+
+	3 Testing Box: 30x28x13 into Container: 44x64x113
+		[Volume: 10920, Irregularity: 179.24596472507]
+		Count: 24
+		Efficiency: 82.361222847949%
+		Rotation: 13x30x28
+		Packed Block: 39x60x112
+
+	4 Testing Box: 20x19x3 into Container: 44x64x113
+		[Volume: 1140, Irregularity: 219.88338162328]
+		Count: 222
+		Efficiency: 79.532884151247%
+		Rotation: 3x20x19
+		Packed Block: 40x57x111
+
+	5 Testing Box: 17x10x9 into Container: 44x64x113
+		[Volume: 1530, Irregularity: 38.682720017612]
+		Count: 168
+		Efficiency: 80.777353177796%
+		Rotation: 9x17x10
+		Packed Block: 40x63x102
+
+	6 Testing Box: 25x11x9 into Container: 44x64x113
+		[Volume: 2475, Irregularity: 158.51187274768]
+		Count: 112
+		Efficiency: 87.112831858407%
+		Rotation: 9x25x11
+		Packed Block: 44x63x100
+
+	7 Testing Box: 20x16x9 into Container: 44x64x113
+		[Volume: 2880, Irregularity: 63.789929400837]
+		Count: 98
+		Efficiency: 88.69670152856%
+		Rotation: 9x20x16
+		Packed Block: 40x63x112
+
+	8 Testing Box: 7x5x3 into Container: 44x64x113
+		[Volume: 105, Irregularity: 8.2390900662486]
+		Count: 2772
+		Efficiency: 91.468473451327%
+		Rotation: 3x7x5
+		Packed Block: 42x63x110
+
+	9 Testing Box: 5x5x5 into Container: 44x64x113
+		[Volume: 125, Irregularity: 2.366582715663E-30]
+		Count: 2112
+		Efficiency: 82.964601769912%
+		Rotation: 5x5x5
+		Packed Block: 40x60x110
+
+6 Testing Container: 66x87x81 [Volume: 465102, Irregularity: 234.81503201773]
+	0 Testing Box: 20x13x3 into Container: 66x87x81
+		[Volume: 780, Irregularity: 169.43332341698]
+		Count: 580
+		Efficiency: 97.268986157875%
+		Rotation: 3x20x13
+		Packed Block: 65x87x80
+
+	1 Testing Box: 30x20x2 into Container: 66x87x81
+		[Volume: 1200, Irregularity: 537.60805844725]
+		Count: 344
+		Efficiency: 88.75472477005%
+		Rotation: 2x30x20
+		Packed Block: 60x86x80
+
+	2 Testing Box: 30x24x19 into Container: 66x87x81
+		[Volume: 13680, Irregularity: 61.188227849259]
+		Count: 24
+		Efficiency: 70.590967142691%
+		Rotation: 19x30x24
+		Packed Block: 60x72x76
+
+	3 Testing Box: 30x28x13 into Container: 66x87x81
+		[Volume: 10920, Irregularity: 179.24596472507]
+		Count: 36
+		Efficiency: 84.523394868222%
+		Rotation: 13x30x28
+		Packed Block: 60x84x78
+
+	4 Testing Box: 20x19x3 into Container: 66x87x81
+		[Volume: 1140, Irregularity: 219.88338162328]
+		Count: 352
+		Efficiency: 86.277848729956%
+		Rotation: 3x20x19
+		Packed Block: 66x76x80
+
+	5 Testing Box: 17x10x9 into Container: 66x87x81
+		[Volume: 1530, Irregularity: 38.682720017612]
+		Count: 280
+		Efficiency: 92.108827741012%
+		Rotation: 9x17x10
+		Packed Block: 63x85x80
+
+	6 Testing Box: 25x11x9 into Container: 66x87x81
+		[Volume: 2475, Irregularity: 158.51187274768]
+		Count: 162
+		Efficiency: 86.206896551724%
+		Rotation: 9x25x11
+		Packed Block: 66x75x81
+
+	7 Testing Box: 20x16x9 into Container: 66x87x81
+		[Volume: 2880, Irregularity: 63.789929400837]
+		Count: 144
+		Efficiency: 89.1675374434%
+		Rotation: 9x20x16
+		Packed Block: 64x80x81
+
+	8 Testing Box: 7x5x3 into Container: 66x87x81
+		[Volume: 105, Irregularity: 8.2390900662486]
+		Count: 4224
+		Efficiency: 95.359727543636%
+		Rotation: 3x7x5
+		Packed Block: 66x84x80
+
+	9 Testing Box: 5x5x5 into Container: 66x87x81
+		[Volume: 125, Irregularity: 2.366582715663E-30]
+		Count: 3536
+		Efficiency: 95.032917510568%
+		Rotation: 5x5x5
+		Packed Block: 65x85x80
+
+7 Testing Container: 63x68x93 [Volume: 398412, Irregularity: 520.18968895425]
+	0 Testing Box: 20x13x3 into Container: 63x68x93
+		[Volume: 780, Irregularity: 169.43332341698]
+		Count: 465
+		Efficiency: 91.036414565826%
+		Rotation: 3x20x13
+		Packed Block: 60x65x93
+
+	1 Testing Box: 30x20x2 into Container: 63x68x93
+		[Volume: 1200, Irregularity: 537.60805844725]
+		Count: 306
+		Efficiency: 92.165898617512%
+		Rotation: 2x30x20
+		Packed Block: 60x68x90
+
+	2 Testing Box: 30x24x19 into Container: 63x68x93
+		[Volume: 13680, Irregularity: 61.188227849259]
+		Count: 18
+		Efficiency: 61.805367308214%
+		Rotation: 19x30x24
+		Packed Block: 48x57x90
+
+	3 Testing Box: 30x28x13 into Container: 63x68x93
+		[Volume: 10920, Irregularity: 179.24596472507]
+		Count: 30
+		Efficiency: 82.226438962682%
+		Rotation: 13x30x28
+		Packed Block: 56x65x90
+
+	4 Testing Box: 20x19x3 into Container: 63x68x93
+		[Volume: 1140, Irregularity: 219.88338162328]
+		Count: 279
+		Efficiency: 79.831932773109%
+		Rotation: 3x20x19
+		Packed Block: 60x57x93
+
+	5 Testing Box: 17x10x9 into Container: 63x68x93
+		[Volume: 1530, Irregularity: 38.682720017612]
+		Count: 252
+		Efficiency: 96.774193548387%
+		Rotation: 9x17x10
+		Packed Block: 63x68x90
+
+	6 Testing Box: 25x11x9 into Container: 63x68x93
+		[Volume: 2475, Irregularity: 158.51187274768]
+		Count: 126
+		Efficiency: 78.273244781784%
+		Rotation: 9x25x11
+		Packed Block: 63x66x75
+
+	7 Testing Box: 20x16x9 into Container: 63x68x93
+		[Volume: 2880, Irregularity: 63.789929400837]
+		Count: 120
+		Efficiency: 86.744375169423%
+		Rotation: 9x20x16
+		Packed Block: 60x64x90
+
+	8 Testing Box: 7x5x3 into Container: 63x68x93
+		[Volume: 105, Irregularity: 8.2390900662486]
+		Count: 3627
+		Efficiency: 95.588235294118%
+		Rotation: 3x7x5
+		Packed Block: 63x65x93
+
+	9 Testing Box: 5x5x5 into Container: 63x68x93
+		[Volume: 125, Irregularity: 2.366582715663E-30]
+		Count: 2808
+		Efficiency: 88.099756031445%
+		Rotation: 5x5x5
+		Packed Block: 60x65x90
+
+8 Testing Container: 119x65x33 [Volume: 255255, Irregularity: 4016.2403633941]
+	0 Testing Box: 20x13x3 into Container: 119x65x33
+		[Volume: 780, Irregularity: 169.43332341698]
+		Count: 297
+		Efficiency: 90.756302521008%
+		Rotation: 3x20x13
+		Packed Block: 117x60x33
+
+	1 Testing Box: 30x20x2 into Container: 119x65x33
+		[Volume: 1200, Irregularity: 537.60805844725]
+		Count: 177
+		Efficiency: 83.210906740319%
+		Rotation: 2x30x20
+		Packed Block: 118x60x30
+
+	2 Testing Box: 30x24x19 into Container: 119x65x33
+		[Volume: 13680, Irregularity: 61.188227849259]
+		Count: 12
+		Efficiency: 64.312158429805%
+		Rotation: 19x30x24
+		Packed Block: 96x57x30
+
+	3 Testing Box: 30x28x13 into Container: 119x65x33
+		[Volume: 10920, Irregularity: 179.24596472507]
+		Count: 20
+		Efficiency: 85.561497326203%
+		Rotation: 13x30x28
+		Packed Block: 112x65x30
+
+	4 Testing Box: 20x19x3 into Container: 119x65x33
+		[Volume: 1140, Irregularity: 219.88338162328]
+		Count: 198
+		Efficiency: 88.429217840983%
+		Rotation: 3x20x19
+		Packed Block: 114x60x33
+
+	5 Testing Box: 17x10x9 into Container: 119x65x33
+		[Volume: 1530, Irregularity: 38.682720017612]
+		Count: 147
+		Efficiency: 88.111888111888%
+		Rotation: 9x17x10
+		Packed Block: 119x63x30
+
+	6 Testing Box: 25x11x9 into Container: 119x65x33
+		[Volume: 2475, Irregularity: 158.51187274768]
+		Count: 84
+		Efficiency: 81.447963800905%
+		Rotation: 9x25x11
+		Packed Block: 100x63x33
+
+	7 Testing Box: 20x16x9 into Container: 119x65x33
+		[Volume: 2880, Irregularity: 63.789929400837]
+		Count: 78
+		Efficiency: 88.006111535523%
+		Rotation: 9x20x16
+		Packed Block: 117x60x32
+
+	8 Testing Box: 7x5x3 into Container: 119x65x33
+		[Volume: 105, Irregularity: 8.2390900662486]
+		Count: 2431
+		Efficiency: 100%
+		Rotation: 3x7x5
+		Packed Block: 119x65x33
+
+	9 Testing Box: 5x5x5 into Container: 119x65x33
+		[Volume: 125, Irregularity: 2.366582715663E-30]
+		Count: 1794
+		Efficiency: 87.853323147441%
+		Rotation: 5x5x5
+		Packed Block: 115x65x30
+
+9 Testing Container: 30x40x50 [Volume: 60000, Irregularity: 202.17425555605]
+	0 Testing Box: 20x13x3 into Container: 30x40x50
+		[Volume: 780, Irregularity: 169.43332341698]
+		Count: 64
+		Efficiency: 83.2%
+		Rotation: 3x20x13
+		Packed Block: 26x40x48
+
+	1 Testing Box: 30x20x2 into Container: 30x40x50
+		[Volume: 1200, Irregularity: 537.60805844725]
+		Count: 50
+		Efficiency: 100%
+		Rotation: 2x30x20
+		Packed Block: 30x40x50
+
+	2 Testing Box: 30x24x19 into Container: 30x40x50
+		[Volume: 13680, Irregularity: 61.188227849259]
+		Count: 4
+		Efficiency: 91.2%
+		Rotation: 19x30x24
+		Packed Block: 30x38x48
+
+	3 Testing Box: 30x28x13 into Container: 30x40x50
+		[Volume: 10920, Irregularity: 179.24596472507]
+		Count: 3
+		Efficiency: 54.6%
+		Rotation: 13x30x28
+		Packed Block: 30x28x39
+
+	4 Testing Box: 20x19x3 into Container: 30x40x50
+		[Volume: 1140, Irregularity: 219.88338162328]
+		Count: 40
+		Efficiency: 76%
+		Rotation: 3x20x19
+		Packed Block: 30x38x40
+
+	5 Testing Box: 17x10x9 into Container: 30x40x50
+		[Volume: 1530, Irregularity: 38.682720017612]
+		Count: 30
+		Efficiency: 76.5%
+		Rotation: 9x17x10
+		Packed Block: 30x34x45
+
+	6 Testing Box: 25x11x9 into Container: 30x40x50
+		[Volume: 2475, Irregularity: 158.51187274768]
+		Count: 18
+		Efficiency: 74.25%
+		Rotation: 9x25x11
+		Packed Block: 27x33x50
+
+	7 Testing Box: 20x16x9 into Container: 30x40x50
+		[Volume: 2880, Irregularity: 63.789929400837]
+		Count: 18
+		Efficiency: 86.4%
+		Rotation: 9x20x16
+		Packed Block: 27x40x48
+
+	8 Testing Box: 7x5x3 into Container: 30x40x50
+		[Volume: 105, Irregularity: 8.2390900662486]
+		Count: 560
+		Efficiency: 98%
+		Rotation: 3x7x5
+		Packed Block: 30x40x49
+
+	9 Testing Box: 5x5x5 into Container: 30x40x50
+		[Volume: 125, Irregularity: 2.366582715663E-30]
+		Count: 480
+		Efficiency: 100%
+		Rotation: 5x5x5
+		Packed Block: 30x40x50
+
