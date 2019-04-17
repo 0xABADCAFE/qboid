@@ -2,8 +2,13 @@
 
 declare(strict_types=1);
 
-include '../profiling.php';
+//include '../profiling.php';
 
+/**
+ * CuboidRotation interface
+ *
+ * Enumeration of 6 distinct, axis aligned, rotations for an arbitrary Cuboid
+ */
 interface CuboidRotation
 {
     const
@@ -16,6 +21,11 @@ interface CuboidRotation
     ;
 }
 
+/**
+ * CuboidMaterialisedProperties trait
+ *
+ * Mixin for Cuboid that adds a set of lazy evaluated member properties when first accessed.
+ */
 trait CuboidMaterialisedProperties
 {
     /** @var string $signature */
@@ -23,21 +33,41 @@ trait CuboidMaterialisedProperties
     /** @var float irregularity */
     /** @var Cuboid[] rotations */
 
+    /**
+     * Magic __get()
+     *
+     * When one of the materialised properties is first requested (and does not exist on the instance) this
+     * call intercepts and generates the requested property.
+     *
+     * @param string $property
+     * @return string|float|Cuboid[]
+     */
     public function __get(string $property)
     {
         switch ($property) {
             case 'signature':
+                // Return the unique string signature for the cuboid (essentially a representation of it's dimensions)
                 return $this->signature = sprintf("%gx%gx%g", $this->length, $this->width, $this->height);
+
             case 'volume':
+                // Return the basic volume of the cuboid
                 return $this->volume = (float)($this->length * $this->width * $this->height);
+
             case 'irregularity':
+                // Return an arbitrary score defining how far away from a perfect cube the cuboid is.
                 $idealEdge = pow($this->volume, 1/3);
                 return $this->irregularity = (float)(
                     (($this->length - $idealEdge)**2) +
                     (($this->width  - $idealEdge)**2) +
                     (($this->height - $idealEdge)**2)
                 );
+
             case 'rotations':
+                // Return the set of distinct rotations for the cuboid, each as a new cuboid
+                if ($this->irregularity < 1e-6) {
+                    // it's a cube!
+                    return $this->rotations = [clone $this];
+                }
                 return $this->rotations = [
                     CuboidRotation::ROT_LWH => new Cuboid($this->length, $this->width,  $this->height),
                     CuboidRotation::ROT_WLH => new Cuboid($this->width,  $this->length, $this->height),
@@ -46,12 +76,20 @@ trait CuboidMaterialisedProperties
                     CuboidRotation::ROT_LHW => new Cuboid($this->length, $this->height, $this->width),
                     CuboidRotation::ROT_HLW => new Cuboid($this->height, $this->length, $this->width)
                 ];
+
             default:
                 return null;
         }
     }
 }
 
+
+/**
+ * Cuboid class
+ *
+ * Trivial cuboid structure comprising length, width and height. Other properties added by the CuboidMaterialisedProperties
+ * trait.
+ */
 class Cuboid
 {
     public
@@ -75,12 +113,15 @@ class Cuboid
     }
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+/**
+ * RegularisedCuboid class
+ *
+ * Trivial extension of the Cuboid class that mandates the following dimensional characteristics:
+ *
+ * Length >= Width >= Height
+ *
+ */
 class RegularisedCuboid extends Cuboid
 {
     public function __construct(float $l, float $w, float $h)
@@ -91,72 +132,114 @@ class RegularisedCuboid extends Cuboid
     }
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+/**
+ * CuboidPacker class
+ *
+ * Minimalist algorithm for how many of an input Cuboid can be packed into an output cuboid by testing each of the
+ * distinct orientations possible.
+ *
+ */
 class CuboidPacker
 {
-    public function best(RegularisedCuboid $input, Cuboid $container)
+    /**
+     * Perform packing test based on trying the different orientation 
+     *
+     * @param Cuboid $box
+     * @param Cuboid $container
+     *
+     * @return object { int $count, string $rotation, float $efficiency }
+     */
+    public function best(Cuboid $box, Cuboid $container)
     {
-        $bestCount = 0;
-        $rotation = null;
-        $containerVol = $container->volume;
-        foreach ($input->rotations as $rotationType => $rotated) {
-            $count      = $this->evaluate($rotated, $container);
+        $bestCount    = 0;
+        $rotation     = null;
+        foreach ($box->rotations as $rotationType => $rotated) {
+            $count = $this->evaluate($rotated, $container);
             if ($count > $bestCount) {
                 $bestCount = $count;
                 $rotation  = $rotated;
             }
         }
 
+        if (0 === $bestCount) {
+            return (object)[
+                'count'      => 0,
+                'rotation'   => "N/A",
+                'efficiency' => 0,
+                'block'      => null
+            ];
+        }
+
         return (object)[
-            'count'      => $count,
-            'rotation'   => ($rotated ? $rotated->signature : "N/A"),
-            'efficiency' => ($rotated ? 100*(($count * $rotated->volume) / $containerVol) : 0)
+            'count'      => $bestCount,
+            'rotation'   => $rotated->signature,
+            'efficiency' => 100*(($bestCount * $rotation->volume) / $container->volume),
+            'block'      => new Cuboid(
+                $rotation->length * (int)($container->length / $rotation->length),
+                $rotation->width  * (int)($container->width  / $rotation->width),
+                $rotation->height * (int)($container->height / $rotation->height)
+            )
         ];
     }
 
-    private function evaluate(Cuboid $input, Cuboid $output) : int
+    private function evaluate(Cuboid $box, Cuboid $container) : int
     {
-        return (int)($output->length / $input->length) *
-               (int)($output->width / $input->width) *
-               (int)($output->height / $input->height);
+        return (int)($container->length / $box->length) *
+               (int)($container->width  / $box->width) *
+               (int)($container->height / $box->height);
     }
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+/**
+ * @var Cuboid[] $containers
+ */
 $containers = [];
-for ($i = 0; $i<10; $i++) {
+for ($i = 0; $i<8; $i++) {
     $containers[] = new Cuboid(mt_rand(40, 80), mt_rand(50, 100), mt_rand(60, 120));
 }
+$containers[] = new Cuboid(7*17, 5*13, 3*11); // Products of Primes
+$containers[] = new Cuboid(30, 40, 50);
 
+/**
+ * @var RegularisedCuboid[] $boxes
+ */
 $boxes = [];
-for ($i = 0; $i<100; $i++) {
+for ($i = 0; $i<8; $i++) {
     $boxes[] = new RegularisedCuboid(mt_rand(1, 30), mt_rand(1, 30), mt_rand(1, 30));
 }
+$boxes[] = new RegularisedCuboid(7, 5, 3); // Primes
+$boxes[] = new RegularisedCuboid(5, 5, 5); // Cube
 
+
+/**
+ * @var CuboidPacker $packer
+ */
 $packer = new CuboidPacker();
 
 foreach ($containers as $container) {
 
     echo
-        "Container Cuboid :", $container,
-        " [Volume: ", $cuboid->volume,
-        ", Irregularity: ", $cuboid->irregularity,
+        "Testing Container: ", $container,
+        " [Volume: ",          $container->volume,
+        ", Irregularity: ",    $container->irregularity,
         "]\n";
 
-
-    foreach ($boxes as $i => $cuboid) {
-        $best   = $packer->best($cuboid, $container);
+    foreach ($boxes as $i => $box) {
+        $best   = $packer->best($box, $container);
         echo
-            "Test ", $i,
-            ": Orientation test for Cuboid: ", $cuboid,
-            " [Volume: ", $cuboid->volume,
-            ", Irregularity: ", $cuboid->irregularity,
-            "] Count: ", $best->count,
-            ", Efficiency: ", $best->efficiency,
-            "% [when rotated as ", $best->rotation,
-            "]\n";
+            "\t", $i,
+            " Testing Box: ",       $box,
+            " into Container: ",    $container,
+            "\n\t\t[Volume: ",      $box->volume,
+            ", Irregularity: ",     $box->irregularity,
+            "]\n\t\tCount: ",       $best->count,
+            "\n\t\tEfficiency: ",   $best->efficiency,
+            "%\n\t\tRotation: ",    $best->rotation,
+            "\n\t\tPacked Block: ", $best->block,
+            "\n";
     }
 
 }
